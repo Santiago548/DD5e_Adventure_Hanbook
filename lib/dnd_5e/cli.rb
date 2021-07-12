@@ -95,10 +95,36 @@ class Dnd5e::CLI
   def print_klass_info(k)
     pr = k.proficiencies
     sk = k.skills
+    name = @klass.strip.downcase
     puts "============================================"
     puts "find the info you seek on you chossen class."
     puts "============================================"
-    klass_logo
+    if name = 'barbarian'
+      pry
+      barbarian_logo
+    elsif name = 'bard'
+      bard_logo
+    elsif name = 'cleric'
+      cleric_logo
+    elsif name = 'druid'
+      druid_logo
+    elsif name = 'fighter'
+      fighter_logo
+    elsif name = 'monk'
+      monk_logo
+    elsif name = 'fighter'
+      fighter_logo
+    elsif name = 'paladin'
+      paladin_logo
+    elsif name = 'ranger'
+      ranger_logo
+    elsif name = 'rogue'
+      rogue_logo
+    elsif name = 'warlock'
+      warlock_logo
+    elsif name = 'wizard'
+      wizard_logo
+    end
     puts ""
     puts "--------------------------------"
     puts "your chosen #{k.name} has (#{k.hit_die}) Hit Die"
@@ -133,11 +159,77 @@ class Dnd5e::CLI
     puts "================"
   end
   
+
+def barbarian_logo
+  puts "
+                                                        
+                                                      
+              oom                       ooo           
+           /mMMMM                       MMMMNo        
+         /MMMMMMMm                     yMMMMMMN/      
+        oMMMMMMMMM                     mMMMMMMMMo     
+       yMMMMMMMMMMyo`      oNs`     `oMMMMMMMMMMMo    
+      oMMMMMMMMMMMMMMMo` oMMMMMo  oMMMMMMMMMMMMMMMo   
+      ooMMMMMMMMMMMMMMMMmMMMMMMMMMMMMMMMMMMMMMMMMoo   
+         MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM      
+      MMMMMMMMMMMMMMM oMMMMMMMMMMMo MMMMMMMMMMMMMMM`  
+      MMMMMMMMMMMMMMMN MMMMMMMMMMM MMMMMMMMMMMMMMMM`  
+      MMMMMMMMMMMMMMM:.MMMMMMMMMMM.:MMMMMMMMMMMMMMM   
+      +MMMMMMMMMMMMMsMMMMMMMMMMMMMMMsMMMMMMMMMMMMM    
+       MMMMMMMMMMMMMMMMMNMMMMMMMMMMMMMMMMMMMMMMMMo    
+        oMMMMMMMMMMMMo   oMMMMMo   ooMMMMMMMMMMMo     
+         oMMMMMMMMMo      sMMMN      +MMMMMMMMMo      
+           sMMMMMMM       yMMMM       NMMMMMMs        
+            +hMMMM        yMMMM       `NMMMh.         
+          `   `oN:        yMMMM        /No-   `       
+          oy              sMMMM              so       
+           NMo            sMMMN            oMM        
+            mMm+         /MMMMMo         .sMM         
+         +  /MMMo         dMMMM         oMMMo  o      
+         oMMMMMMMM/       MMMMM       :MMMMMNMM`      
+           oMMMMMMMh      MMMMM      hMMMMMMMo        
+            -hMM/+/oo     MMMMM     oo+++MMN/         
+              .M          MMMMM          M/           
+                         mMMMMMM                      
+                          :hMNo                       
+  "
 end
 
-
+  def druid_logo 
+    puts "                               
+                          o:                          
+                  o      mMM/     oo                  
+               osMo     NMMMMN     MMo`               
+             .MMMo    /MMMMMMMM     sMMy.             
+            yMMMM    oMMMMMMMMMM-    hMMMy            
+          `MMMMm    oMMMMMMMMMMMMo    NMMMN           
+          MMMMm    oMMMMMMMMMMMMMMo    MMMMN          
+         ooooo:   oMMMMMMMMMMMMMMMMo   /ooooo         
+        ooooooo+ oMMMMMMMM+hMMMMMMMMo +ooooooo        
+        MMMMMMMMMMMMMMMMMM-/MMMMMMMMMMMMMMMMMM        
+        MMMMMMMMMMMMMMMMMM  MMMMMMMMMMMMMMMMMM        
+        MMMMMMMMMMMMMMMMM.  sMMMMMMMMMMMMMMMMM        
+        MMMMMMMMMMMMMMMMM`  .MMMMMMMMMMMMMMMMo        
+        MMMMMMMMMMMMMMMMs    MMMMMoMMMMMMMMMM         
+        oMMMMMMMMM MMMMM.    .MMMMM MMMMMMMMM         
+         MMMMMMMM  MMMMM`    .MMMMM  MMMMMMMM         
+    +NMMMMMMMMMM   MMMMM      MMMMM  oMMMMMMMNMNNo    
+     .MMMMMMMMMM   MMMMM      MMMMM   MMMMMMMMMM      
+      /MMMMMMMMM   MMMMM`    `MMMMM   MMMMMMMMM       
+        MMMMMMMMo  MMMMM.    .MMMMM  +MMMMMMMo        
+      M  oNMMMMMN  oMMMMM    MMMMMo  NMMMMMNo oo      
+      oMo  omMMMMo  MMMMM.  :MMMMM  NMMMMm+  oMo      
+       MMo   :hMMMo oMMMMM .MMMMM  oMMMy-  oMMM       
+        MMMs+   oMMo  yMMMyhMMMy  NMyo` .+MMMy        
+         omMMNs.. -om- oMMMMMMo odo-  .yNMMdo         
+           :oyMMMso`    :MMMM  / ``osMMMyo            
+                  ooo    hMMh    ooo                  
+                          MM                          
+                          ::                          
+    "
+  end
                                                       
-def klass_logo
+def monk_logo
   puts "                                                
                   `+ssss+`                         
                   -MMMMMMomso+:.                   
@@ -169,8 +261,9 @@ def klass_logo
                         Md`                        
                         /+ 
 "                       
-                          
-                           
+end
+
+def cleric_logo
 puts "                                                                                 
                           :                           
                           ss                          
@@ -201,8 +294,10 @@ ooooMMMMM   yMMMMMMMMMMMMMMMMMMMMMMMMMMMMy  MMMMMMoooo
                          /MM/                         
                           ds                          
                           ss                          
-"                                     
+"
+end
 
+def bard_logo  
 puts "
        MMMMN+                             `+oMMMN      
        dMMMMMN-                          oMMMMMMd      
@@ -229,7 +324,9 @@ puts "
          /oMy-   +oNMMMMMMMMMMMMMMMNNo+   ohMo/        
              :o/      oooooooooooo      oo:            
 "
+end
 
+def fighter_logo  
 puts "                         
    .ooo                    /o:                     ooo  
    /Ms`oN/        .N/   /oNMMMMMmo/    oM         oN+sMM 
@@ -257,8 +354,10 @@ puts "
           oo++   +MMMMMMMMMMMMMMMMMMMMMMMo`  `+oNN       
                     oooMMMMMMMMMMMMMooo                  
                           ooooooo                        
-"                                                                                   
+"
+end
 
+def paladin_logo  
 puts "                                   
          `y-                                     :+`      
          `Nm:              `-+h+-               +my`      
@@ -279,6 +378,9 @@ puts "
                      .:sdMMMo   +MMMds:`                  
                         `.oh+   /h+-`                     
 "
+end
+
+def ranger_logo  
 puts "                                                                           
                                                      
                           +h`                         
@@ -309,8 +411,10 @@ puts "
                    `.ods./NMy.omo:`                   
                        .hMMMMd/`                      
                        -s/---+y.                      
-"                                                      
-                                                      
+"
+end
+
+def rogue_logo                                                      
 puts "                                                                                                            
                           o/                          
                         oMMMm+                        
@@ -342,7 +446,9 @@ NmmmMMMMMdo:  yMMMM   MMMMyMMMM   :MMMs  /+oMMMMMmmmM-
                        +NMMMm+                        
                          /o:                          
 "
+end 
 
+def wizard_logo
 puts "                                                                                                            
                          MM                                  
                          MMMoo                               
@@ -373,8 +479,10 @@ puts "
                     hMMMMMMMMM MMM -MMMMMMMMo                
               ooooooMMMMMMMMMM mMM yMMMMMMMMMsooooo          
                              o +o- .+             
-"                             
-                             
+"
+end
+
+def sorcerer_logo                               
 puts "                                                                                 
                            -N                         
                            MN                        
@@ -405,8 +513,10 @@ puts "
              `sMMMMMMMMMMMMMMMMMMMMMMMMMd:           
                 ooMMMMMMMMMMMMMMMMMMMMo-             
                     ooooMMMMMMMMMooo`                
-"                                        
-                                                      
+"
+end
+
+def warlock_logo                                                        
 puts "                                                      
                 `/`                `/`                
                 `omo`            `oNs`                
@@ -438,5 +548,5 @@ puts "
                         /NhhN/                        
                         `o..o`
 "
-
+end
 end
