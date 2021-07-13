@@ -95,35 +95,36 @@ class Dnd5e::CLI
   def print_klass_info(k)
     pr = k.proficiencies
     sk = k.skills
-    name = @klass.strip.downcase
+    name = @klass
     puts "============================================"
     puts "find the info you seek on you chossen class."
     puts "============================================"
-    if name = 'barbarian'
-      pry
+    if name == "barbarian"
       barbarian_logo
-    elsif name = 'bard'
+    elsif name == "bard"
       bard_logo
-    elsif name = 'cleric'
+    elsif name == "cleric"
       cleric_logo
-    elsif name = 'druid'
+    elsif name == "druid"
       druid_logo
-    elsif name = 'fighter'
+    elsif name == "fighter"
       fighter_logo
-    elsif name = 'monk'
+    elsif name == "monk"
       monk_logo
-    elsif name = 'fighter'
+    elsif name == "fighter"
       fighter_logo
-    elsif name = 'paladin'
+    elsif name == "paladin"
       paladin_logo
-    elsif name = 'ranger'
+    elsif name == "ranger"
       ranger_logo
-    elsif name = 'rogue'
+    elsif name == "rogue"
       rogue_logo
-    elsif name = 'warlock'
+    elsif name == "warlock"
       warlock_logo
-    elsif name = 'wizard'
+    elsif name == "wizard"
       wizard_logo
+    else
+      "doesnt work"
     end
     puts ""
     puts "--------------------------------"
