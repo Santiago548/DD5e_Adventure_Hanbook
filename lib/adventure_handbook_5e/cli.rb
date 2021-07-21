@@ -1,4 +1,4 @@
-class Dnd5e::CLI
+class AdventureHandbook5e::CLI
   
   def start
       puts"

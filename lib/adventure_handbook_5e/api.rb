@@ -21,3 +21,4 @@ class API
       new_klass = Klass.new(name: k["name"], hit_die: k["hit_die"], proficiencies: k["proficiencies"], saving_throws: k["saving_throws"], subclasses: k["subclasses"], skills: k["proficiency_choices"][0]["from"], klass: klass)
     end
   end
+end

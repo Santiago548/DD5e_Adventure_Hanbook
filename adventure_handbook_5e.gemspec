@@ -1,7 +1,7 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "dnd_5e/version"
+require "adventure_handbook_5e/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "5e_adventure_handobook"
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{use this gem to find information on classes for dnd 5e}
   spec.description   = %q{use this gem to find information on classes for dnd 5e.}
-  spec.homepage      = "https://github.com/Santiago548/dnd_5e.git"
+  spec.homepage      = "https://github.com/Santiago548/DD5e_Adventure_Handbook"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'

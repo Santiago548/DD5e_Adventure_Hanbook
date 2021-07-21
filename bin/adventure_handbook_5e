@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+ 
+require_relative "../lib/adventure_handbook_5e"
+ 
+AdventureHandbook5e::CLI.new.start
