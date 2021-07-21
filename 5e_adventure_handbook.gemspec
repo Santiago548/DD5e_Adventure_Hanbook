@@ -4,13 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "dnd_5e/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "dnd_5e"
+  spec.name          = "5e_adventure_handobook"
   spec.version       = Dnd5e::VERSION
   spec.authors       = ["'Dominic Barajas'"]
   spec.email         = ["'dominicbarajas548@gmail.com'"]
 
   spec.summary       = %q{use this gem to find information on classes for dnd 5e}
-  spec.description   = %q{use this gem to find information on classes for dnd 5e. later will include all other info.}
+  spec.description   = %q{use this gem to find information on classes for dnd 5e.}
   spec.homepage      = "https://github.com/Santiago548/dnd_5e.git"
   spec.license       = "MIT"
 
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "http://mygemserver.com"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = "https://github.com/Santiago548/dnd_5e.git"
-    spec.metadata["changelog_uri"] = "https://github.com/Santiago548/dnd_5e.git"
+    spec.metadata["source_code_uri"] = "https://github.com/Santiago548/DD5e_Adventure_Handbook"
+    spec.metadata["changelog_uri"] = "https://github.com/Santiago548/DD5e_Adventure_Hanbook"
   else
     raise "RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
