@@ -43,9 +43,9 @@ class Dnd5e::CLI
                         .'______________________________\|/______________________________`'.
                                                                               
                       "
-    puts "                         =========================================="
-    puts "                         Welcome to the 5th Edtion Adventure Manuel"
-    puts "                         =========================================="
+    puts "                          =========================================="
+    puts "                          Welcome to the 5th Edtion Adventure Manuel"
+    puts "                          =========================================="
     @klasses = API.fetch_klasses
     get_klass_list
     get_user_klass

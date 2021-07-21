@@ -1,25 +1,20 @@
 # Dnd5e
 
-"Welcome to the 5th Edition Class manuel . information available are hit Die, saving throws, subclasses and Proficiencies of all Classes"
+"Welcome to the 5th Edition Adventuring manuel. information available are hit Die, saving throws, subclasses and Proficiencies of all Classes"
+
+## Screenshots 📷
+
+## Built with 🔧
+
+Ruby
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'dnd_5e'
-```
+## Getting Started
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install dnd_5e
-
-## Usage
-
+Fork 🍴 and Star ⭐️ this repository
+git clone to your local directory 💻
 Start the program:
 ```
  ./bin/dnd_5e
