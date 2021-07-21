@@ -3,11 +3,11 @@
 "Welcome to the 5th Edition Adventuring manuel. information available are hit Die, saving throws, subclasses and Proficiencies of all Classes"
 
 # Screenshots 📷
-<!-- PROJECT LOGO -->
+
 ![screenshot1](/screenshots/Screenshot1.png)
-    <img src="screenshots\Screenshot1.png" alt="Screenshots1" width="200" height="200">    
-    <img src="screenshots\Screenshot2.png" alt="Screenshots2" width="200" height="200">
-    <img src="screenshots\Screenshot3.png" alt="Screenshots3" width="200" height="200">
+![screenshot1](/screenshots/Screenshot2.png)
+![screenshot1](/screenshots/Screenshot3.png)
+    
 # Built with 🔧
 
 * [Ruby](https://www.ruby-lang.org/en/)
@@ -17,9 +17,9 @@
 
 # Getting Started
 
-Fork 🍴 and Star ⭐️ this repository
-git clone to your local directory 💻
-Start the program:
+* Fork 🍴 and Star ⭐️ this repository
+* git clone to your local directory 💻
+* Start the program:
 ```
  ./bin/dnd_5e
  ```
