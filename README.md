@@ -21,7 +21,7 @@
 * git clone to your local directory 💻
 * Start the program:
 ```
- ./bin/dnd_5e
+ ./bin/adventure_handbook_5e
  ```
 * Pick a class 'name' from the list:
 * The information on the 'class' you chose will populate.
